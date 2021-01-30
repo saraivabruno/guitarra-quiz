@@ -4,25 +4,86 @@
     "description": "Teste seus conhecimentos sobre esse maravilhoso instrumento de 6 cordas e quiça o melhor de todos os tempos xP",
     "questions": [
         {
-            "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-            "title": "Como fazer um seletor por id via CSS?",
-            "description": "Essa é pra aquecer",
-            "answer": 2,
+            "image": "https://i.gifer.com/AAqe.gif",
+            "title": "Qual o nome das cordas graves e agudas respectivamente?",
+            "description": "Essa tá tranquila né?",
+            "answer": 3,
             "alternatives": [
-                ".elemento",
-                "*elemento",
-                "#elemento",
-                "%elemento"
+                "Maiores e Menores",
+                "Baixos e Altas",
+                "Grossas e Finas",
+                "Bordões e Primas"
             ]
         },
         {
-            "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-            "title": "Como fazer um background gradiente com css?",
-            "description": "Faz tempo em haha",
+            "image": "https://giffiles.alphacoders.com/307/30789.gif",
+            "title": "Começando da primeira corda para a sexta, quais as notas que teremos ao tocar as cordas soltas?",
+            "description": "Leve em conta a afinação padrão em E",
+            "answer": 1,
+            "alternatives": [
+                "E - C - G - D - A - E",
+                "E - B - G - D - A - E",
+                "B - C - D - G - A - E",
+                "E - B - D - G - A - E"
+            ]
+        },
+        {
+            "image": "https://www.guitarchordsworld.com/wp-content/uploads/2010/12/G.gif",
+            "title": "O acorde de G maior é composto por quais notas?",
+            "description": "",
             "answer": 0,
             "alternatives": [
-                "background: linear-gradient(#e66465, #9198e5);",
-                "background: gradient(#e66465, #9198e5);"
+                "G - B - D",
+                "G - C - D ",
+                "G - A - C",
+                "G - A - D"
+            ]
+        },
+        {
+            "image": "https://media3.giphy.com/media/xTiQyNEY3kQ8r7WKFq/giphy.gif",
+            "title": "Qual é a sétima da nota E?",
+            "description": "",
+            "answer": 2,
+            "alternatives": [
+                "E",
+                "C",
+                "D",
+                "F"
+            ]
+        },
+        {
+            "image": "https://thumbs.gfycat.com/RightGoodnaturedDogwoodclubgall-size_restricted.gif",
+            "title": "O que é um Bend?",
+            "description": "",
+            "answer": 1,
+            "alternatives": [
+                "Uma escala composta por uma sequência de notas",
+                "Uma técnica onde a corda é pressionada para cima com a intenção de alcançar outra nota",
+                "Um componente da guitarra",
+                "Um estilo de palhetada"
+            ]
+        },
+        {
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToOAvPAJJlNeMFTOnxkAxKH910r4sB3GAvaQ&usqp=CAU",
+            "title": "De forma resumida, como funciona um captador de guitarra?",
+            "description": "",
+            "answer": 2,
+            "alternatives": [
+                "O captador possui 'microfones' integrados que captam o som das cordas individualmente",
+                "O captador cria uma corrente elétrica a partir da vibração da madeira quando você toca",
+                "A vibração das cordas interage com o imã do captador, que por sua vez, transforma isso em corrente elétrica"
+            ]
+        },
+        {
+            "image": "https://sep.yimg.com/ay/yhst-133227396441093/index-5.gif",
+            "title": "Qual destas opções são tipos de guitarra?",
+            "description": "",
+            "answer": 0,
+            "alternatives": [
+                "Stratocaster, Les Paul, Explorer",
+                "Telecaster, Flying V, Musicaster",
+                "Les Paul, Semi Tele, Telecaster",
+                "SG, Stratocaster, Lescaster"
             ]
         }
     ],
