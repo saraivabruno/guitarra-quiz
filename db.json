@@ -1,7 +1,7 @@
 {
     "bg": "https://img2.goodfon.com/original/1920x1080/9/47/hands-musician-guitar.jpg",
     "title": "Quita Quiz",
-    "description": "Teste seus conhecimentos sobre esse maravilhoso instrumento de 6 cordas e quiça o melhor de todos os tempos xP",
+    "description": "Teste seus conhecimentos sobre esse maravilhoso instrumento de 6 cordas chamado Guitarra",
     "questions": [
         {
             "image": "https://i.gifer.com/AAqe.gif",
@@ -88,7 +88,9 @@
         }
     ],
     "external": [
-        "https://musicquiz.sidibecker.vercel.app/"
+        "https://musicquiz.sidibecker.vercel.app/",
+        "https://theoffice-aluraquiz.joaovitordmoraes.vercel.app",
+        "https://universe-quiz.gustavoherreronunes.vercel.app/"        
     ],
     "theme": {
         "colors": {

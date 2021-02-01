@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
@@ -7,6 +8,9 @@ import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import AlternativesForm from '../src/components/AlternativesForm';
 import Button from '../src/components/Button';
+import Loader from '../src/components/Loader';
+
+import guitaristAnimation from '../src/screens/animations/success.json';
 
 function ResultWidget({ results }) {
   return (
@@ -14,6 +18,15 @@ function ResultWidget({ results }) {
       <Widget.Header>
         Tela de Resultado:
       </Widget.Header>
+
+      <Player
+        autoplay
+        loop
+        src={guitaristAnimation}
+        style={{ height: '300px', width: '300px' }}
+      >
+        <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+      </Player>
 
       <Widget.Content>
         <p>
@@ -53,11 +66,11 @@ function LoadingWidget() {
   return (
     <Widget>
       <Widget.Header>
-        Carregando...
+        Aguarde, carregando...
       </Widget.Header>
 
-      <Widget.Content>
-        [Desafio do Loading]
+      <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
+        <Loader />
       </Widget.Content>
     </Widget>
   );
@@ -118,6 +131,7 @@ function QuestionWidget({
             const alternativeId = `alternative__${alternativeIndex}`;
             const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
             const isSelected = selectedAlternative === alternativeIndex;
+
             return (
               <Widget.Topic
                 as="label"
@@ -181,8 +195,8 @@ export default function QuizPage() {
     // fetch() ...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 * 1000);
-  // nasce === didMount
+    }, 3 * 1000);
+    // nasce === didMount
   }, []);
 
   function handleSubmitQuiz() {

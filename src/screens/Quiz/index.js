@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-//import { Lottie } from 'react-lottie';
-// import db from '../../../db.json';
+
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
 import QuizBackground from '../../components/QuizBackground';
@@ -9,8 +8,7 @@ import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
-
-import loadingAnimation from './animations/loading.json';
+import Loader from '../../components/Loader';
 
 function ResultWidget({ results }) {
   return (
@@ -56,16 +54,11 @@ function LoadingWidget() {
   return (
     <Widget>
       <Widget.Header>
-        Carregando...
+        Aguarde, carregando...
       </Widget.Header>
 
       <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
-        {/* <Lottie
-          width="200px"
-          height="200px"
-          className="lottie-container basic"
-          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
-        /> */}
+        <Loader />
       </Widget.Content>
     </Widget>
   );
@@ -190,8 +183,8 @@ export default function QuizPage({ externalQuestions, externalBg }) {
     // fetch() ...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 * 2000);
-  // nasce === didMount
+    }, 3 * 1000);
+    // nasce === didMount
   }, []);
 
   function handleSubmitQuiz() {
